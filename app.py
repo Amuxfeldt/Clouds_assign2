@@ -38,5 +38,5 @@ def numerical_integration(lower, upper) :
     
     return r
 
-if __name__ == "__main__":
-    app.run()
+#if __name__ == "__main__":
+#    app.run()
