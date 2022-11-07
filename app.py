@@ -26,7 +26,7 @@ def numerical_integration(lower, upper) :
     f = np.vectorize(f)
     r = []
 
-    for i in range(1,7):
+    for i in range(1,10):
 
         N = 10**i
         x = np.linspace(lower,upper,N)
@@ -38,5 +38,5 @@ def numerical_integration(lower, upper) :
     
     return r
 
-#if __name__ == "__main__":
-#    app.run()
+if __name__ == "__main__":
+    app.run()
