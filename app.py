@@ -26,7 +26,7 @@ def numerical_integration(lower, upper) :
     f = np.vectorize(f)
     r = []
 
-    for i in range(1,10):
+    for i in range(1,7):
 
         N = 10**i
         x = np.linspace(lower,upper,N)
