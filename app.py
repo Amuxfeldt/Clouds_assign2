@@ -3,7 +3,7 @@ from flask import Flask
 import numpy as np
 import math
 
-app = Flask(__name__)
+app = Flask(__name__) 
 
 @app.route("/")
 def hello_world():
@@ -38,5 +38,5 @@ def numerical_integration(lower, upper) :
     
     return r
 
-#if __name__ == "__main__":
-#    app.run(port=8080)
+if __name__ == "__main__":
+    app.run()
