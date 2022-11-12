@@ -15,7 +15,7 @@ def num_int(lower,upper):
     
     integral = numerical_integration(float(lower),float(upper))
     #print(integral)
-    return f"<p>The result is: {integral}</p>"
+    return f"<p>The result for N = [10,100,1000,10000,100000, 1000000] is: {integral}</p>"
 
 
 def numerical_integration(lower, upper) :
@@ -28,13 +28,15 @@ def numerical_integration(lower, upper) :
 
     for i in range(1,7):
 
-        N = 10**i
+        N = 10**i #use N = [10,100,1000,10000,100000, 1000000]
+
         x = np.linspace(lower,upper,N)
-        l = x[1] - x[0]
+
+        dx = x[1] - x[0]
 
         y = f(x)
-        area = y * l
-        r.append(np.sum(area))
+
+        r.append(np.sum(y * dx))
     
     return r
 
